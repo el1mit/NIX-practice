@@ -244,6 +244,9 @@
     align-items: center;
     background-color: #f2eee8;
 }
+.blog__container {
+    width: 90%;
+}
 .blog__nav {
     margin: 35px 0 35px 0;
     background-color: #fffbf5;
@@ -252,17 +255,28 @@
 .blog__nav-list {
     list-style-type: none;
     display: flex;
-    flex-flow: row wrap;
-    margin: 0 35px 0 35px;
-    gap: 70px;
+    justify-content: space-between;
+    flex-flow: row nowrap;
     font-size: 16px;
 }
 .blog__nav-link {
+    position: relative;
     display: flex;
     flex-flow: column wrap;
     padding: 25px;
     align-items: center;
     text-decoration: none;
+}
+.blog__nav-item a.active::after,
+.blog__nav-link:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #8bbeeb;
+
 }
 .blog__nav-link__action {
     color: #cfccc6;
@@ -275,7 +289,6 @@
 .blog__posts {
     display: flex;
     flex-flow: column wrap;
-    margin: 0 70px 50px 70px;
     background-color: #fffbf5;
     box-shadow: 0px 1px 5px #a3a29f;
     padding-bottom: 25px;
