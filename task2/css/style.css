@@ -273,7 +273,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 4px;
+    height: 5px;
     width: 100%;
     background-color: #8bbeeb;
 
@@ -296,7 +296,6 @@
 .blog__post {
     display: grid;
     grid-template-columns: 1fr 10fr;
-    /* justify-items: center; */
     padding: 25px 25px 0 25px;
 }
 .blog__post-avatar {
@@ -312,6 +311,7 @@
 .blog__post-right {
     display: flex;
     flex-flow: column wrap;
+    padding-left: 10px;
 }
 .blog__post-top {
     display: flex;
@@ -386,6 +386,7 @@
     display: flex;
     flex-flow: column wrap;
     background-color: #fffbf5;
+    color: #605e58;
 }
 
 .trends__caption {
@@ -428,6 +429,7 @@
     width: 50px;
 }
 .trends__people__person-text {
+    
     width: 50%;
     display: flex;
     flex-flow: column wrap;
@@ -437,6 +439,8 @@
     font-size: 18px;
 }
 .trends__people__person-text-name {
+    text-decoration: none;
+    color: #605e58;
     text-align: left;
 }
 .trends__people__person-text-about {
