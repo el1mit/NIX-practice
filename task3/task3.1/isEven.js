@@ -1,8 +1,5 @@
 function isEven(number) {
-    if (number & 1) {
-        return false;
-    }
-    return true;
+    return number & 1 ? false : true;
 }
 
 console.log(isEven(3));
