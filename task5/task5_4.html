@@ -23,10 +23,9 @@
 				&lt;html&gt;<br>
 				&lt;body&gt;<br>
 				${showChildNodes(document.body, newWnd.document)}<br>
-				&lt;body&gt;<br>
-				&lt;html&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;<br>
 			`);
-
 
 		}
 		/*
@@ -41,19 +40,7 @@
 					вызовите эту функцию для каждого из дочерних узлов	
 		*/
 		function showChildNodes(node, doc) {
-			var result = node.tagName;
-			
-			if (node.hasChildNodes()) {
-			var child = node.firstChild;
-			while (child) {
-				if (child.nodeType === 1) {
-					result = result + " " + showChildNodes(child, doc);
-				}
-				child = child.nextSibling;
-			}
-			}
-			return result;
-			// return node.firstChild.nextElementSibling;
+
 		}
 
 	</script>

@@ -12,6 +12,18 @@ var row = 10;
 
 function createDOM() {
 	/* Создайте в элементе div таблицу с помощью методов DOM */
+	let div = document.getElementById("d");
+	let tbl = document.createElement("table");
+	for (let i = 1; i <= row; i++) {
+		let trow = document.createElement("tr");
+		for (let j = 1; j <= cell; j++) {
+			let tcell = document.createElement("td");
+			tcell.innerHTML = `${i * j}`;
+			trow.appendChild(tcell);
+		}
+		tbl.appendChild(trow);
+	}
+	div.appendChild(tbl);
 }
 </script>
 </head>
