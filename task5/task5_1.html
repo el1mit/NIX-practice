@@ -75,7 +75,7 @@ function closeWnd() {
 		1. Проверьте, существует ли дочернее окно и не закрыто ли оно 
 		2. Если окно существует, то закройте его
 	*/
-	if (wnd) wnd.close();
+	if(wnd && !wnd.closed) wnd.close();
 }
 </script>
 </head>

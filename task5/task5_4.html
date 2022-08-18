@@ -20,11 +20,13 @@
 		function showDOM() {
 			let newWnd = window.open("", "DOM Structure", `height=${screen.height},width=${screen.width}`);
 			newWnd.document.write(`
-				&lt;html&gt;<br>
-				&lt;body&gt;<br>
-				${showChildNodes(document.body, newWnd.document)}<br>
-				&lt;/body&gt;<br>
-				&lt;/html&gt;<br>
+				&lt;HTML&gt;<br>
+				&lt;BODY&gt;<br>
+			`);
+			showChildNodes(document.body, newWnd.document);
+			newWnd.document.write(`
+				&lt;/BODY&gt;<br>
+				&lt;/HTML&gt;<br>
 			`);
 
 		}
@@ -39,9 +41,21 @@
 				1.2 Если это узел-элемент - выведите его название и ...
 					вызовите эту функцию для каждого из дочерних узлов	
 		*/
-		function showChildNodes(node, doc) {
 
+		function showChildNodes(node, doc, spacing = 0) {
+			if (node.nodeType === 1) {
+				if(node.tagName != "BODY") doc.write('&nbsp;'.repeat(spacing * 4) + '&lt;' + node.tagName + '&gt<br>');
+				for (let i = 0; i < node.childNodes.length; i++) {
+					showChildNodes(node.childNodes[i], doc, spacing + 1);
+				}
+				if(node.tagName != "BODY") doc.write('&nbsp;'.repeat(spacing * 4) + '&lt;/' + node.nodeName + '&gt<br>');
+			}
+			else if (node.nodeType === 3) {
+				doc.write('&nbsp;'.repeat(spacing * 4) + node.data + '<br>');
+			}
 		}
+      
+    </script>
 
 	</script>
 </head>
