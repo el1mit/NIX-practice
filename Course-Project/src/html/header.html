@@ -1,0 +1,115 @@
+<header class="header">
+    <div class="header__top top-header">
+        <div class="top-header__container">
+            <a href="#Main" class="top-header__logo">
+                <img src="@img/logo.png" alt="logo">
+            </a>
+            <div class="top-header__contacts contacts-header">
+                <div class="contacts-header__location location-header">
+                    <div class="location-header__location _icon-location"></div>
+                    <div class="loaction-header__text text-location">                    
+                        <a href="#" class="text-location__city">г. Киев</a>
+                        <a href="#" class="text-location__street">ул. Независимости, д. 10</a>
+                    </div>
+                </div>
+                <div class="contacts-header__phone phone-header">
+                    <div class="phone-header__phone _icon-phone"></div>
+                    <div class="phone-header__text text-phone">
+                        <a href="tel:18009608000" class="text-phone__number">+1 (800) 960-80-00</a>
+                        <div class="text-phone__time">Пн-Пт 09:00 - 21:00</div>
+                    </div>
+                </div>
+                <button type="button" class="contacts-header__request" rel="popup1">Оставить заявку</button>
+            </div>
+        </div>
+    </div>
+    <nav class="header__catalog catalog-header">
+        <div class="catalog-header__container">
+            <div class="catalog-header__elements">
+                <div class="catalog-header__element element-catalog">
+                    <div class="element-catalog__item">
+                        <a href="#Main" class="element-catalog__title" >Главная</a>
+                        <button tabindex="-1" type="button" class="element-catalog__arrow _icon-down-arrow"></button>
+                        <ul class="element-catalog__list">
+                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-header__element element-catalog">
+                    <div class="element-catalog__item">
+                        <a href="index.html" class="element-catalog__title">Мебельный поролон</a>
+                        <button tabindex="-1" type="button"class="element-catalog__arrow _icon-down-arrow"></button>
+                        <ul class="element-catalog__list">
+                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-header__element element-catalog">
+                    <div class="element-catalog__item">
+                        <a href="#" class="element-catalog__title">Технический поролон</a>
+                        <button tabindex="-1" type="button" class="element-catalog__arrow _icon-down-arrow "></button>
+                        <ul class="element-catalog__list">
+                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="catalog-header__element element-catalog">
+                    <div class="element-catalog__item">
+                        <a href="#" class="element-catalog__title">О поролоне</a>
+                    </div>
+                </div>
+                <div class="catalog-header__element element-catalog">
+                    <div class="element-catalog__item">
+                        <a href="#" class="element-catalog__title">О Компании</a>
+                    </div> 
+                </div>
+                <div class="catalog-header__element element-catalog">
+                    <div class="element-catalog__item">
+                        <a href="#" class="element-catalog__title">Оплата и доставка</a>
+                    </div>
+                </div>
+                <div class="catalog-header__element element-catalog">
+                    <div class="element-catalog__item">
+                        <a href="#" class="element-catalog__title">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="popup">
+        <div class="popup__overlay" id="popup1">
+            <div class="popup__content">
+                <div class="popup__close">X</div>
+                <div class="popup__title">Оставьте заявку</div>
+                <div class="popup__subtitle">Наш специалист свяжется с вами в ближайшее время</div>
+                <form class="popup__form form-popup" action="" method=""> 
+                    <input class="form-popup__name" type="text" name="name" placeholder="Ваше имя *">
+                    <input class="form-popup__number"type="text" name="email" placeholder="Ваш номер телефона *">
+                    <div class="form-popup__check">
+                        <input class="form-popup__checkbox"type="checkbox" id="policy">
+                        <label for="policy">Я ознакомлен с <a href="" class="form-popup__policy">политикой конфиденциальности</a> и согласен на обработку персональных данных</label>
+                    </div>
+                    <button class="form-popup__button" type="button" rel="popup2">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup">
+        <div class="popup__overlay" id="popup2">
+            <div class="popup__content_second">
+                <div class="popup__close">X</div>
+                <div class="popup__title">Спасибо!</div>
+                <div class="popup__subtitle">Ваша заявка принята, менеджер свяжется с вами в ближайшее время</div>
+            </div>
+        </div>
+    </div>
+
+</header>

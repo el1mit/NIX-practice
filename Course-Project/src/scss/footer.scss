@@ -1,0 +1,110 @@
+.footer {  
+    // .footer__container
+    &__container {
+        display: flex;
+        flex-flow: row wrap;
+        &:before {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: $mainColor;
+        }
+    }
+}
+.container-footer {
+    // .container-footer__about
+    &__about {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        margin-top: 38px;
+    }
+    // .container-footer__lists
+    &__lists {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row wrap;
+        column-gap: 30px;
+        margin: 94px ;
+    }
+    // .container-footer__contacts
+    &__contacts {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        margin-top: 34px;
+    }
+}
+.about-footer {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    width: 330px;
+    // .about-footer__copy
+    &__copy {
+        margin-top: 40px;
+    }
+    // .about-footer__text
+    &__text {
+        margin-top: 23px;
+        line-height: 149.5%;
+    }
+    // .about-footer__policy
+    &__policy {
+        margin-top: 19px;
+        line-height: 240%;
+    }
+    // .about-footer__rights
+    &__rights {
+        margin: 10px 0 16px 0;
+        line-height: 240%;
+        color: #C0C0C0;
+    }
+}
+.lists-footer {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 250%;
+    // .lists-footer__list
+    &__list {}
+    // .lists-footer__item
+    &__item {}
+}
+.contacts-footer {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: right;
+    width: 330px;
+    // .contacts-footer__phone
+    &__phone {
+        font-size: 24px; 
+    }
+    // .contacts-footer__time
+    &__time {
+        line-height: 240%;
+        color: #C0C0C0;
+    }
+    // .contacts-footer__city
+    &__city {
+        margin-top: 18px;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    // .contacts-footer__street
+    &__street {
+        font-size: 16px;
+        line-height: 150%;
+    }
+    // .contacts-footer__mail
+    &__mail {
+        margin-top: 18px;
+        line-height: 240%;
+        color: $secondaryMain;
+    }
+}

@@ -1,0 +1,32 @@
+//Font Settings================================
+$fontFamilly: "Roboto";
+$fontSize: 14px;
+$mainColor: #28292D;
+
+//General Settings=============================
+//min page width
+$minWidth: 320px; 
+//max page width
+$maxWidth: 1920px;
+//container width
+$maxWidthContainer: 1410px;
+//container padding
+$containerPadding: 30px;
+
+//responsive type:
+//1 - no breakpoints
+//2 - breakpoints
+$responsiveType: 1;
+
+//width for breakpoint activation
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+//breakpoints
+$pc: $containerWidth;
+$tablet: 991.98px;
+$mobile: 767.98px;
+$mobileSmall: 479.98px;
+
+$bgColor: #FFFFFF;
+$secondaryColor: #E5E5E5;
+$secondaryMain: #F39B14;
