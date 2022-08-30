@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,135 +14,144 @@
 <body>
     <div class="wrapper">
         <header class="header">
-    <div class="header__top top-header">
-        <div class="top-header__container">
-            <a href="#Main" class="top-header__logo">
-                <img src="img/logo.png" alt="logo">
-            </a>
-            <div class="top-header__contacts contacts-header">
-                <div class="contacts-header__location location-header">
-                    <div class="location-header__location _icon-location"></div>
-                    <div class="loaction-header__text text-location">                    
-                        <a href="#" class="text-location__city">г. Киев</a>
-                        <a href="#" class="text-location__street">ул. Независимости, д. 10</a>
-                    </div>
-                </div>
-                <div class="contacts-header__phone phone-header">
-                    <div class="phone-header__phone _icon-phone"></div>
-                    <div class="phone-header__text text-phone">
-                        <a href="tel:18009608000" class="text-phone__number">+1 (800) 960-80-00</a>
-                        <div class="text-phone__time">Пн-Пт 09:00 - 21:00</div>
-                    </div>
-                </div>
-                <button type="button" class="contacts-header__request" rel="popup1">Оставить заявку</button>
-            </div>
-        </div>
-    </div>
-    <nav class="header__catalog catalog-header">
-        <div class="catalog-header__container">
-            <div class="catalog-header__elements">
-                <div class="catalog-header__element element-catalog">
-                    <div class="element-catalog__item">
-                        <a href="#Main" class="element-catalog__title" >Главная</a>
-                        <button tabindex="-1" type="button" class="element-catalog__arrow _icon-down-arrow"></button>
-                        <ul class="element-catalog__list">
-                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
-                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
-                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="catalog-header__element element-catalog">
-                    <div class="element-catalog__item">
-                        <a href="index.html" class="element-catalog__title">Мебельный поролон</a>
-                        <button tabindex="-1" type="button"class="element-catalog__arrow _icon-down-arrow"></button>
-                        <ul class="element-catalog__list">
-                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
-                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
-                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="catalog-header__element element-catalog">
-                    <div class="element-catalog__item">
-                        <a href="#" class="element-catalog__title">Технический поролон</a>
-                        <button tabindex="-1" type="button" class="element-catalog__arrow _icon-down-arrow "></button>
-                        <ul class="element-catalog__list">
-                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
-                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
-                            <li><a href="#" class="element-catalog__title">Елемент</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="catalog-header__element element-catalog">
-                    <div class="element-catalog__item">
-                        <a href="#" class="element-catalog__title">О поролоне</a>
-                    </div>
-                </div>
-                <div class="catalog-header__element element-catalog">
-                    <div class="element-catalog__item">
-                        <a href="#" class="element-catalog__title">О Компании</a>
-                    </div> 
-                </div>
-                <div class="catalog-header__element element-catalog">
-                    <div class="element-catalog__item">
-                        <a href="#" class="element-catalog__title">Оплата и доставка</a>
-                    </div>
-                </div>
-                <div class="catalog-header__element element-catalog">
-                    <div class="element-catalog__item">
-                        <a href="#" class="element-catalog__title">Контакты</a>
+            <div class="header__top top-header">
+                <div class="top-header__container">
+                    <a href="#Main" class="top-header__logo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                    <div class="top-header__contacts contacts-header">
+                        <div class="contacts-header__location location-header">
+                            <div class="location-header__location _icon-location"></div>
+                            <div class="loaction-header__text text-location">
+                                <a href="#" class="text-location__city">г. Киев</a>
+                                <a href="#" class="text-location__street">ул. Независимости, д. 10</a>
+                            </div>
+                        </div>
+                        <div class="contacts-header__phone phone-header">
+                            <div class="phone-header__phone _icon-phone"></div>
+                            <div class="phone-header__text text-phone">
+                                <a href="tel:18009608000" class="text-phone__number">+1 (800) 960-80-00</a>
+                                <div class="text-phone__time">Пн-Пт 09:00 - 21:00</div>
+                            </div>
+                        </div>
+                        <button type="button" class="contacts-header__request" rel="popup1">Оставить заявку</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    
-    <div class="popup">
-        <div class="popup__overlay" id="popup1">
-            <div class="popup__content">
-                <div class="popup__close">X</div>
-                <div class="popup__title">Оставьте заявку</div>
-                <div class="popup__subtitle">Наш специалист свяжется с вами в ближайшее время</div>
-                <form class="popup__form form-popup" action="" method=""> 
-                    <input class="form-popup__name" type="text" name="name" placeholder="Ваше имя *">
-                    <input class="form-popup__number"type="text" name="email" placeholder="Ваш номер телефона *">
-                    <div class="form-popup__check">
-                        <input class="form-popup__checkbox"type="checkbox" id="policy">
-                        <label for="policy">Я ознакомлен с <a href="" class="form-popup__policy">политикой конфиденциальности</a> и согласен на обработку персональных данных</label>
+            <nav class="header__catalog catalog-header">
+                <div class="catalog-header__container">
+                    <div class="catalog-header__elements">
+                        <div class="catalog-header__element element-catalog">
+                            <div class="element-catalog__item">
+                                <a href="#Main" class="element-catalog__title">Главная</a>
+                                <button tabindex="-1" type="button"
+                                    class="element-catalog__arrow _icon-down-arrow"></button>
+                                <ul class="element-catalog__list">
+                                    <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                                    <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                                    <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog-header__element element-catalog">
+                            <div class="element-catalog__item">
+                                <a href="index.html" class="element-catalog__title">Мебельный поролон</a>
+                                <button tabindex="-1" type="button"
+                                    class="element-catalog__arrow _icon-down-arrow"></button>
+                                <ul class="element-catalog__list">
+                                    <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                                    <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                                    <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog-header__element element-catalog">
+                            <div class="element-catalog__item">
+                                <a href="#" class="element-catalog__title">Технический поролон</a>
+                                <button tabindex="-1" type="button"
+                                    class="element-catalog__arrow _icon-down-arrow "></button>
+                                <ul class="element-catalog__list">
+                                    <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                                    <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                                    <li><a href="#" class="element-catalog__title">Елемент</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog-header__element element-catalog">
+                            <div class="element-catalog__item">
+                                <a href="#" class="element-catalog__title">О поролоне</a>
+                            </div>
+                        </div>
+                        <div class="catalog-header__element element-catalog">
+                            <div class="element-catalog__item">
+                                <a href="#" class="element-catalog__title">О Компании</a>
+                            </div>
+                        </div>
+                        <div class="catalog-header__element element-catalog">
+                            <div class="element-catalog__item">
+                                <a href="#" class="element-catalog__title">Оплата и доставка</a>
+                            </div>
+                        </div>
+                        <div class="catalog-header__element element-catalog">
+                            <div class="element-catalog__item">
+                                <a href="#" class="element-catalog__title">Контакты</a>
+                            </div>
+                        </div>
                     </div>
-                    <button class="form-popup__button" type="button" rel="popup2">Отправить заявку</button>
-                </form>
-            </div>
-        </div>
-    </div>
+                </div>
+            </nav>
 
-    <div class="popup">
-        <div class="popup__overlay" id="popup2">
-            <div class="popup__content_second">
-                <div class="popup__close">X</div>
-                <div class="popup__title">Спасибо!</div>
-                <div class="popup__subtitle">Ваша заявка принята, менеджер свяжется с вами в ближайшее время</div>
+            <div class="popup">
+                <div class="popup__overlay" id="popup1">
+                    <div class="popup__content">
+                        <div class="popup__close">X</div>
+                        <div class="popup__title">Оставьте заявку</div>
+                        <div class="popup__subtitle">Наш специалист свяжется с вами в ближайшее время</div>
+                        <form class="popup__form form-popup" action="" method="">
+                            <h5 class="username-error" style="color: red;">*Username is missing</h5>
+                            <input class="form-popup__name" type="text" name="name" placeholder="Ваше имя *">
+                            <h5 class="phone-error" style="color: red;">*Phone is missing</h5>
+                            <input class="form-popup__number" type="text" name="email"
+                                placeholder="Ваш номер телефона *">
+                            <div class="form-popup__check">
+                                <input class="form-popup__checkbox" type="checkbox" id="policy">
+                                <label class="form-popup__label" for="policy">Я ознакомлен с <a href=""
+                                        class="form-popup__policy">политикой конфиденциальности</a> и согласен на
+                                    обработку персональных данных</label>
+                            </div>
+                            <button class="form-popup__button" type="button" rel="popup2">Отправить заявку</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
-</header>
+            <div class="popup">
+                <div class="popup__overlay" id="popup2">
+                    <div class="popup__content_second">
+                        <div class="popup__close">X</div>
+                        <div class="popup__title">Спасибо!</div>
+                        <div class="popup__subtitle">Ваша заявка принята, менеджер свяжется с вами в ближайшее время
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
         <main class="main">
             <nav class="breadcrumbs__container">
-    <ul class="breadcrumbs__list">
-      <li class="breadcrumbs__item _icon-right-arrow"><a href="#">Главная</a></li>
-      <li class="breadcrumbs__item _icon-right-arrow"><a href="index.html">Мебельный поролон</a></li>
-    </ul>
-</nav>
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item _icon-right-arrow"><a href="#">Главная</a></li>
+                    <li class="breadcrumbs__item _icon-right-arrow"><a href="index.html">Мебельный поролон</a></li>
+                </ul>
+            </nav>
 
             <section class="categories">
                 <div class="categories__container">
                     <div class="categories__content">
                         <div class="categories__title">Мебельный поролон</div>
                         <div class="categories__subtitle">
-                            Как принято считать, явные признаки победы институционализации призывают 
-                            нас к новым свершениям, которые, в свою очередь, должны быть в равной степени 
+                            Как принято считать, явные признаки победы институционализации призывают
+                            нас к новым свершениям, которые, в свою очередь, должны быть в равной степени
                             предоставлены сами себе. Для современного мира экономическая повестка сегодняшнего
                             дня предоставляет широкие возможности для благоприятных перспектив.
                         </div>
@@ -172,26 +182,33 @@
                     </div>
                     <div class="description__title">Описание категории </div>
                     <div class="description__text">
-                        В своём стремлении повысить качество жизни, они забывают, что существующая теория 
-                        не даёт нам иного выбора, кроме определения направлений прогрессивного развития. 
-                        Являясь всего лишь частью общей картины, некоторые особенности внутренней политики 
-                        будут преданы социально-демократической анафеме. В рамках спецификации современных 
-                        стандартов, предприниматели в сети интернет представляют собой не что иное, как квинтэссенцию 
-                        победы маркетинга над разумом и должны быть призваны к ответу. И нет сомнений, что сторонники 
-                        тоталитаризма в науке смешаны с уникальными данными до степени совершенной неузнаваемости, 
-                        из-за чего возрастает их статус бесполезности. Реплицированные с зарубежных источников, 
-                        современные исследования описаны максимально подробно. А ещё активно развивающиеся 
+                        В своём стремлении повысить качество жизни, они забывают, что существующая теория
+                        не даёт нам иного выбора, кроме определения направлений прогрессивного развития.
+                        Являясь всего лишь частью общей картины, некоторые особенности внутренней политики
+                        будут преданы социально-демократической анафеме. В рамках спецификации современных
+                        стандартов, предприниматели в сети интернет представляют собой не что иное, как квинтэссенцию
+                        победы маркетинга над разумом и должны быть призваны к ответу. И нет сомнений, что сторонники
+                        тоталитаризма в науке смешаны с уникальными данными до степени совершенной неузнаваемости,
+                        из-за чего возрастает их статус бесполезности. Реплицированные с зарубежных источников,
+                        современные исследования описаны максимально подробно. А ещё активно развивающиеся
                     </div>
                     <div class="description__text">
-                        Прежде всего, синтетическое тестирование говорит о возможностях системы массового участия. 
-                        Внезапно, предприниматели в сети интернет, которые представляют собой яркий пример континентально-европейского 
-                        типа политической культуры, будут подвергнуты целой серии независимых исследований. Внезапно, некоторые 
-                        особенности внутренней политики представляют собой не что иное, как квинтэссенцию победы маркетинга над 
-                        разумом и должны быть обнародованы. Таким образом, <span>укрепление и развитие внутренней структуры</span> однозначно 
-                        определяет каждого участника как способного принимать собственные решения касаемо экспериментов, 
-                        поражающих по своей масштабности и грандиозности. Сложно сказать, почему представители современных 
-                        социальных резервов, которые представляют собой яркий пример континентально-европейского типа политической 
-                        культуры, будут своевременно верифицированы. Банальные, но неопровержимые выводы, а также непосредственные 
+                        Прежде всего, синтетическое тестирование говорит о возможностях системы массового участия.
+                        Внезапно, предприниматели в сети интернет, которые представляют собой яркий пример
+                        континентально-европейского
+                        типа политической культуры, будут подвергнуты целой серии независимых исследований. Внезапно,
+                        некоторые
+                        особенности внутренней политики представляют собой не что иное, как квинтэссенцию победы
+                        маркетинга над
+                        разумом и должны быть обнародованы. Таким образом, <span>укрепление и развитие внутренней
+                            структуры</span> однозначно
+                        определяет каждого участника как способного принимать собственные решения касаемо экспериментов,
+                        поражающих по своей масштабности и грандиозности. Сложно сказать, почему представители
+                        современных
+                        социальных резервов, которые представляют собой яркий пример континентально-европейского типа
+                        политической
+                        культуры, будут своевременно верифицированы. Банальные, но неопровержимые выводы, а также
+                        непосредственные
                         участники технического прогресса
                     </div>
                 </div>
@@ -204,33 +221,33 @@
                         <div class="benefits__items">
                             <div class="benefits__item item-benefits">
                                 <div class="item-benefits__image">
-                                      <img src="img/quality.png" alt="quality">  
+                                    <img src="img/quality.png" alt="quality">
                                 </div>
                                 <div class="item-benefits__title">Качество</div>
                                 <div class="item-benefits__subtitle">
-                                    Сделанные на базе интернет-аналитики выводы освещают 
+                                    Сделанные на базе интернет-аналитики выводы освещают
                                     чрезвычайно интересные особенности картины в целом
                                 </div>
                             </div>
                             <div class="benefits__item item-benefits">
                                 <div class="item-benefits__image">
-                                    <img src="img/shipping.png" alt="shipping">  
+                                    <img src="img/shipping.png" alt="shipping">
                                 </div>
                                 <div class="item-benefits__title">Доставка</div>
                                 <div class="item-benefits__subtitle">
-                                    Как уже неоднократно упомянуто, тщательные исследования 
-                                    конкурентов могут быть своевременно верифицированы. 
+                                    Как уже неоднократно упомянуто, тщательные исследования
+                                    конкурентов могут быть своевременно верифицированы.
                                     В своём стремлении улучшить пользовательский опыт мы упускаем
                                 </div>
                             </div>
                             <div class="benefits__item item-benefits">
                                 <div class="item-benefits__image">
-                                    <img src="img/support.png" alt="support">  
+                                    <img src="img/support.png" alt="support">
                                 </div>
                                 <div class="item-benefits__title">Грамотная консультация</div>
                                 <div class="item-benefits__subtitle">
-                                    Сложившаяся структура организации является качественно новой 
-                                    ступенью своевременного выполнения сверхзадачи. Перспективное 
+                                    Сложившаяся структура организации является качественно новой
+                                    ступенью своевременного выполнения сверхзадачи. Перспективное
                                     планирование предоставляет широкие возможности для первоочередных требований
                                 </div>
                             </div>
@@ -239,61 +256,64 @@
                 </div>
             </section>
             <section class="ceo">
-    <div class="ceo__container">
-        <div class="ceo__info">
-            <div class="ceo__title">СЕО</div>
-            <div class="ceo__text">
-                Равным образом, выбранный нами инновационный путь играет важную роль в 
-                формировании поставленных обществом задач. В своём стремлении повысить качество жизни, 
-                они забывают, что постоянный количественный рост и сфера нашей активности играет 
-                определяющее значение для модели развития! Высокий уровень вовлечения представителей 
-                целевой аудитории является четким доказательством простого факта: базовый вектор развития 
-                представляет собой интересный эксперимент проверки системы массового участия. Прежде всего, 
-                глубокий уровень погружения выявляет срочную потребность соответствующих условий активизации. 
-                Каждый из нас понимает очевидную вещь: современная методология разработки создаёт необходимость 
-                включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса 
-                системы массового участия.
-            </div>
-        </div>
-    </div>
-</section>
+                <div class="ceo__container">
+                    <div class="ceo__info">
+                        <div class="ceo__title">СЕО</div>
+                        <div class="ceo__text">
+                            Равным образом, выбранный нами инновационный путь играет важную роль в
+                            формировании поставленных обществом задач. В своём стремлении повысить качество жизни,
+                            они забывают, что постоянный количественный рост и сфера нашей активности играет
+                            определяющее значение для модели развития! Высокий уровень вовлечения представителей
+                            целевой аудитории является четким доказательством простого факта: базовый вектор развития
+                            представляет собой интересный эксперимент проверки системы массового участия. Прежде всего,
+                            глубокий уровень погружения выявляет срочную потребность соответствующих условий
+                            активизации.
+                            Каждый из нас понимает очевидную вещь: современная методология разработки создаёт
+                            необходимость
+                            включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса
+                            системы массового участия.
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
-    <div class="footer__container container-footer">
-        <div class="container-footer__about about-footer">
-            <a href="#" class="about-footer__logo">
-                <img src="img/logo.png" alt="logo">
-            </a>
-            <div class="about-footer__copy">ООО “NEVEON”  &copy; 2010-2021</div>
-            <div class="about-footer__text">Продукция из поролона, поролон оптом, технический поролон, мебельный поролон</div>
-            <div class="about-footer__policy">Политика конфиденциальности</div>
-            <div class="about-footer__rights">Все права защищены</div>
-        </div>
+            <div class="footer__container container-footer">
+                <div class="container-footer__about about-footer">
+                    <a href="#" class="about-footer__logo">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                    <div class="about-footer__copy">ООО “NEVEON” &copy; 2010-2021</div>
+                    <div class="about-footer__text">Продукция из поролона, поролон оптом, технический поролон, мебельный
+                        поролон</div>
+                    <div class="about-footer__policy">Политика конфиденциальности</div>
+                    <div class="about-footer__rights">Все права защищены</div>
+                </div>
 
-        <div class="container-footer__lists lists-footer">
-            <ul class="lists-footer__list">
-                <li><a class="lists-footer__item">Каталог</a></li>
-                <li><a class="lists-footer__item">Производство</a></li>
-                <li><a class="lists-footer__item">Оплата и доставка</a></li>
-                <li><a class="lists-footer__item">Главная</a></li>
-            </ul>
-            <ul class="lists-footer__list">
-                <li><a class="lists-footer__item">Статьи</a></li>
-                <li><a class="lists-footer__item">О компании</a></li>
-                <li><a class="lists-footer__item">Контакты</a></li>
-                <li><a class="lists-footer__item">Сертификаты</a></li>
-            </ul>
-        </div>
+                <div class="container-footer__lists lists-footer">
+                    <ul class="lists-footer__list">
+                        <li><a class="lists-footer__item">Каталог</a></li>
+                        <li><a class="lists-footer__item">Производство</a></li>
+                        <li><a class="lists-footer__item">Оплата и доставка</a></li>
+                        <li><a class="lists-footer__item">Главная</a></li>
+                    </ul>
+                    <ul class="lists-footer__list">
+                        <li><a class="lists-footer__item">Статьи</a></li>
+                        <li><a class="lists-footer__item">О компании</a></li>
+                        <li><a class="lists-footer__item">Контакты</a></li>
+                        <li><a class="lists-footer__item">Сертификаты</a></li>
+                    </ul>
+                </div>
 
-        <div class="container-footer__contacts contacts-footer">
-            <a href="tel:18009608000" class="contacts-footer__phone">+1 (800) 960-80-00</a>
-            <div class="contacts-footer__time">ПН-ПТ 08:00-21:00</div>
-            <a href="#" class="contacts-footer__city">г. Киев</a>
-            <a href="#" class="contacts-footer__street">ул. Независимости, д. 10</a>
-            <a href="mailto:support@gmail.com" class="contacts-footer__mail">support@gmail.com</a>
-        </div>
-    </div>
-</footer>
+                <div class="container-footer__contacts contacts-footer">
+                    <a href="tel:18009608000" class="contacts-footer__phone">+1 (800) 960-80-00</a>
+                    <div class="contacts-footer__time">ПН-ПТ 08:00-21:00</div>
+                    <a href="#" class="contacts-footer__city">г. Киев</a>
+                    <a href="#" class="contacts-footer__street">ул. Независимости, д. 10</a>
+                    <a href="mailto:support@gmail.com" class="contacts-footer__mail">support@gmail.com</a>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="js/app.min.js"></script>
 </body>
